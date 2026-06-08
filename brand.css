@@ -1,0 +1,100 @@
+/*
+ * Interpreter Strip — Brand
+ * A Scouting field-guide palette: navy, warm paper, signal red.
+ *
+ * Author: David M. Anderson
+ * Built with AI assistance (Claude, Anthropic)
+ *
+ * Colors anchored explicitly in hex. Read of the light theme:
+ *   - Page is a warm off-white (paper/khaki), not stark white.
+ *   - Navy (#14366b) carries links, buttons, and the nav bar.
+ *   - Signal red (#b5121b) marks highlights and the active tab.
+ *   - Body text is a near-black charcoal, clearly darker than navy
+ *     so links stay distinct from prose.
+ */
+
+:root {
+    /* Colors — Light */
+    --color-bg:           #f4f1e9;
+    --color-surface:      #ffffff;
+    --color-text:         #1f2630;
+    --color-text-muted:   #5f6b78;
+    --color-border:       #ddd6c6;
+    --color-accent:       #14366b;
+    --color-accent-hover: #0e2750;
+    --color-highlight:       #b5121b;
+    --color-highlight-hover: #8f0e15;
+    --color-nav-bg:       #14366b;
+    --color-nav-text:     #f4f1e9;
+
+    /* Typography */
+    --font-body:    system-ui, Arial, Helvetica, sans-serif;
+    --font-heading: Georgia, 'Times New Roman', serif;
+    --font-mono:    'Courier New', Courier, monospace;
+    --line-height:  1.7;
+
+    /* Shape */
+    --radius: 5px;
+
+    /* Shadow */
+    --shadow:    0 1px 3px rgba(0, 0, 0, 0.09);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.11);
+
+    /* Extended palette (theme-independent raw brand) */
+    --primary:   #14366b;
+    --secondary: #b5121b;
+    --gold:      #c8881a;
+}
+
+/* Dark mode — system preference */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --color-bg:           #0c1320;
+        --color-surface:      #131d2e;
+        --color-text:         #e6ebf1;
+        --color-text-muted:   #93a1b3;
+        --color-border:       #25324a;
+        --color-accent:       #6ea0df;
+        --color-accent-hover: #88b3ea;
+        --color-highlight:       #e2575f;
+        --color-highlight-hover: #f06b73;
+        --color-nav-bg:       #0a1019;
+        --color-nav-text:     #e6ebf1;
+        --shadow:             0 1px 3px rgba(0, 0, 0, 0.4);
+        --shadow-md:          0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Dark mode — manual override */
+[data-theme="dark"] {
+    --color-bg:           #0c1320;
+    --color-surface:      #131d2e;
+    --color-text:         #e6ebf1;
+    --color-text-muted:   #93a1b3;
+    --color-border:       #25324a;
+    --color-accent:       #6ea0df;
+    --color-accent-hover: #88b3ea;
+    --color-highlight:       #e2575f;
+    --color-highlight-hover: #f06b73;
+    --color-nav-bg:       #0a1019;
+    --color-nav-text:     #e6ebf1;
+    --shadow:             0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md:          0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Light mode — explicit override */
+[data-theme="light"] {
+    --color-bg:           #f4f1e9;
+    --color-surface:      #ffffff;
+    --color-text:         #1f2630;
+    --color-text-muted:   #5f6b78;
+    --color-border:       #ddd6c6;
+    --color-accent:       #14366b;
+    --color-accent-hover: #0e2750;
+    --color-highlight:       #b5121b;
+    --color-highlight-hover: #8f0e15;
+    --color-nav-bg:       #14366b;
+    --color-nav-text:     #f4f1e9;
+    --shadow:             0 1px 3px rgba(0, 0, 0, 0.09);
+    --shadow-md:          0 4px 12px rgba(0, 0, 0, 0.11);
+}

@@ -1,0 +1,169 @@
+/*
+ * Interpreter Strip — project styles
+ * Layered on top of axe.css. Only what the practice views need.
+ *
+ * Author: David M. Anderson. Built with AI assistance (Claude, Anthropic).
+ */
+
+/* Active tab gets the signal-red marker. */
+#tabs a.active {
+  background: rgba(255, 255, 255, 0.16);
+  opacity: 1;
+  box-shadow: inset 0 -3px 0 var(--color-highlight);
+}
+
+/* The official requirement text, set apart above each practice view. */
+.req-text {
+  font-style: italic;
+  color: var(--color-text-muted);
+  border-left: 3px solid var(--color-highlight);
+  padding-left: 0.75rem;
+  margin-top: 0;
+}
+
+.instructions {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.source-line {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: -0.25rem;
+}
+
+/* German subtitle under a card heading. */
+.topic-de {
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: -0.5rem;
+}
+
+/* A passage to be translated: monospace-free, generous, paper-like. */
+.passage {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+.passage p:first-child { margin-top: 0; }
+.passage p:last-child { margin-bottom: 0; }
+
+/* Bilingual list rows: German prominent, English gloss muted beside it. */
+.prompt-list,
+.vocab-list,
+.cognate-list {
+  list-style: none;
+  padding-left: 0;
+}
+.prompt-list li,
+.vocab-list li,
+.cognate-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.prompt-list li:last-child,
+.vocab-list li:last-child,
+.cognate-list li:last-child {
+  border-bottom: none;
+}
+
+.de {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.gloss {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+/* Reveal panels — the self-check mechanism. */
+.reveal {
+  margin-top: 1rem;
+}
+.reveal-body {
+  margin-top: 0.5rem;
+}
+
+/* h4 labels inside cards, tight and quiet. */
+.grid article h4 {
+  margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.prompt-choices li,
+.prompt-choices {
+  margin: 0.35rem 0;
+}
+
+/* Pattern lessons: a one-line rule, then the why, then examples. */
+.pattern-rule {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  border-left: 3px solid var(--color-accent);
+  padding-left: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+.pattern-why {
+  color: var(--color-text-muted);
+  margin-top: 0;
+}
+.lesson .cognate-list {
+  columns: 2;
+  column-gap: 2rem;
+}
+.lesson .cognate-list li {
+  break-inside: avoid;
+}
+
+/* Which patterns a passage exercises. */
+.leans {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+}
+.leans strong { color: var(--color-text); }
+
+/* Countdown timer. */
+.timer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.timer-label {
+  font-weight: 600;
+}
+.timer-clock {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 4ch;
+  color: var(--color-accent);
+}
+.timer.done .timer-clock {
+  color: var(--color-highlight);
+}
+.timer button {
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+}
