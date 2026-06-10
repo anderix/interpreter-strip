@@ -1,16 +1,19 @@
 /*
  * Interpreter Strip — Brand
- * A Scouting field-guide palette: navy, warm paper, signal red.
+ * A Scouting field-guide palette on the official Scouting America colors:
+ * Congress Blue, warm paper, Scouting America Red. Matches the Troop 99 site
+ * brand so the guide and troop99.org read as one family.
  *
  * Author: David M. Anderson
  * Built with AI assistance (Claude, Anthropic)
  *
  * Colors anchored explicitly in hex. Read of the light theme:
  *   - Page is a warm off-white (paper/khaki), not stark white.
- *   - Navy (#14366b) carries links, buttons, and the nav bar.
- *   - Signal red (#b5121b) marks highlights and the active tab.
- *   - Body text is a near-black charcoal, clearly darker than navy
+ *   - Congress Blue (#003F87) carries links, buttons, and the nav bar.
+ *   - Scouting America Red (#CE1126) marks highlights and the active tab.
+ *   - Body text is a near-black charcoal, clearly darker than the blue
  *     so links stay distinct from prose.
+ *   - Dark mode softens the blue and red and drops to a near-black nav.
  */
 
 :root {
@@ -20,11 +23,11 @@
     --color-text:         #1f2630;
     --color-text-muted:   #5f6b78;
     --color-border:       #ddd6c6;
-    --color-accent:       #14366b;
-    --color-accent-hover: #0e2750;
-    --color-highlight:       #b5121b;
-    --color-highlight-hover: #8f0e15;
-    --color-nav-bg:       #14366b;
+    --color-accent:       #003f87;
+    --color-accent-hover: #00295c;
+    --color-highlight:       #ce1126;
+    --color-highlight-hover: #a50e1f;
+    --color-nav-bg:       #003f87;
     --color-nav-text:     #f4f1e9;
 
     /* Typography */
@@ -41,8 +44,8 @@
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.11);
 
     /* Extended palette (theme-independent raw brand) */
-    --primary:   #14366b;
-    --secondary: #b5121b;
+    --primary:   #003f87;
+    --secondary: #ce1126;
     --gold:      #c8881a;
 }
 
@@ -89,11 +92,11 @@
     --color-text:         #1f2630;
     --color-text-muted:   #5f6b78;
     --color-border:       #ddd6c6;
-    --color-accent:       #14366b;
-    --color-accent-hover: #0e2750;
-    --color-highlight:       #b5121b;
-    --color-highlight-hover: #8f0e15;
-    --color-nav-bg:       #14366b;
+    --color-accent:       #003f87;
+    --color-accent-hover: #00295c;
+    --color-highlight:       #ce1126;
+    --color-highlight-hover: #a50e1f;
+    --color-nav-bg:       #003f87;
     --color-nav-text:     #f4f1e9;
     --shadow:             0 1px 3px rgba(0, 0, 0, 0.09);
     --shadow-md:          0 4px 12px rgba(0, 0, 0, 0.11);
