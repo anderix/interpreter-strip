@@ -61,7 +61,7 @@ Then open `http://localhost:8753/`. It can also be opened directly from disk.
 
 ## Built on Axe
 
-Styling uses the [Axe](https://github.com/anderix/axe) semantic CSS framework.
+Styling uses the [Axe](https://github.com/excelano/axe) semantic CSS framework.
 `brand.css` is the project's Scouting field-guide palette (navy, warm paper, signal
 red), with light and dark themes. `axe/axe.css` and `axe/theme.js` are vendored
 copies — refresh them from the Axe repository when it updates.

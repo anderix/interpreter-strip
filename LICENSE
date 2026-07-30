@@ -38,8 +38,8 @@ repository. This guide builds on:
     pattern groupings, and false-friend list are drawn from that project;
     this guide is distributed under the same license accordingly.
 
-  - Axe CSS framework (https://github.com/anderix/axe), © David Anderson.
-    Vendored in axe/.
+  - Axe CSS framework (https://github.com/excelano/axe), © 2026 Excelano
+    LLC, licensed MIT. Vendored in axe/.
 
 All German passages, speeches, the model letter, and the conversation
 prompts are original to this project.
