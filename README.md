@@ -85,7 +85,3 @@ LICENSE file. The cognate pairs, sound-shift groupings, and false-friend list ar
 drawn from the
 [mutual-intelligibility](https://github.com/anderix/en-de-mutual-intelligibility)
 project, which is CC BY-SA 4.0; this guide carries the same license accordingly.
-
-## Author
-
-David M. Anderson.
