@@ -88,4 +88,4 @@ project, which is CC BY-SA 4.0; this guide carries the same license accordingly.
 
 ## Author
 
-David M. Anderson. Built with the assistance of Claude (Anthropic).
+David M. Anderson.
