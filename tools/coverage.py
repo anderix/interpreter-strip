@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Author: David M. Anderson
+# Built with AI assistance (Claude, Anthropic)
 """
 coverage.py — measure how decodable each German passage is.
 
@@ -37,7 +39,7 @@ import argparse
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 CONTENT_JS = os.path.join(REPO, "content.js")
-DEFAULT_MI = os.path.expanduser("~/en-de-mutual-intelligibility")
+DEFAULT_MI = os.path.expanduser("~/repos/learning/en-de-mutual-intelligibility")
 
 # Map mutual-intelligibility filenames to the patterns we teach. Anything
 # not listed here is a real cross-language pattern we do NOT teach.
